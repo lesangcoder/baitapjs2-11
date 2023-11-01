@@ -1,0 +1,64 @@
+.sp-thongbao {
+  color: red;
+  margin-left: 2px; 
+  display: none;
+}
+img.ui-datepicker-trigger {
+  display: none;
+}
+#SapXepGiam{
+	display: none;
+}
+
+#content{
+	width: 100%;
+	background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.myCardHeader, .myCardFooter{
+	background-color: transparent;       
+}
+
+#sidebar .sidebar-header .infomation .avatar .navbar-brand img{
+  width: 3rem;
+  border-radius: 50%;
+}
+#sidebar .sidebar-header .navbar-brand-small img{
+  margin-top:0.8rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+#sidebar .sidebar-header .infomation .name p:first-child{
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 0;
+  margin-top:2rem;
+  color:#fff;
+}
+#sidebar .sidebar-header .infomation .name p:last-child{
+  font-size: 13px;
+  color:#fff;
+}
+i.fas.fa-dollar-sign {
+  font-size: 19px;
+  padding: 0 2px;
+}
+
+.card-body .input-group {
+  position: relative;
+}
+
+.card-body .input-group > i {
+  position: absolute;
+  top: 10px;
+  font-size: 18px;
+  left: 9px;
+  color: #bbbbbb;
+  z-index: 200;
+}
+
+.card-body .input-group > input {
+  padding-left: 40px;
+}
