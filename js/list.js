@@ -41,7 +41,7 @@ function ListEmploy(){
 ListEmploy.prototype.searchEmployee = function (keyword){
     var arrSearch = [];
     for(var i = 0; i < this.list.length; i++) {
-        if (this.list[i].fullName.toLowerCase().indexOf(keyword.toLowerCase()) !== -1){
+        if (this.list[i].ranking.toLowerCase().indexOf(keyword.toLowerCase()) !== -1){
             arrSearch.push(this.list[i]);
         }
     }

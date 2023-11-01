@@ -49,6 +49,17 @@ function Validation(){
             return false;
     };
 
+
+
+    this.checkLengthTknv = function (input, spanID, mess, min, max){
+        if (input.length >= 4 && input.length <= 6){
+            getTrue(spanID);
+            return true;
+        }
+            getFalse(spanID, mess);
+            return false;
+    };
+
     this.checkLetter = function (input, spanID, mess){
         var letter = "^[a-zA-Z_ÀÁÂÃÈÉÊẾÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶ" + "ẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợ" + "ụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\\s]+$";
         if (input.match(letter)){

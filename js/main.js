@@ -20,9 +20,9 @@ function getValuesInput(){
 
         isValid &= validation.checkValidation(
             _account,"tbTKNV",
-            "* Tài khoản hợp lệ từ 6-20 ký tự (bao gồm số 0-9, chữ IN HOA và chữ thường).\<br\>Không được có khoảng trắng và ký tự đặc biệt.") 
-            && validation.checkLength(
-                _account, "tbTKNV", "* Tài khoản hợp lệ từ 6-20 ký tự (bao gồm số 0-9, chữ IN HOA và chữ thường).\<br\>Không được có khoảng trắng và ký tự đặc biệt.", 6,20)
+            "* Tài khoản hợp lệ từ 4-6 ký tự (bao gồm số 0-9, chữ IN HOA và chữ thường).\<br\>Không được có khoảng trắng và ký tự đặc biệt.") 
+            && validation.checkLengthTknv(
+                _account, "tbTKNV", "* Tài khoản hợp lệ từ 4-6 ký tự (bao gồm số 0-9, chữ IN HOA và chữ thường).\<br\>Không được có khoảng trắng và ký tự đặc biệt.", 6,20)
                 && validation.checkAccount(
                     _account, "tbTKNV", "* Tài khoản đã có người sử dụng, vui lòng nhập tài khoản khác.\<br\>Tài khoản hợp lệ từ 6-20 ký tự (bao gồm số 0-9, chữ IN HOA và chữ thường) \<br\>Không được có khoảng trắng và ký tự đặc biệt.", listEmployees.list)
                     && validation.checkWhiteSpace(
